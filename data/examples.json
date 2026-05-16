@@ -1,0 +1,27 @@
+{
+  "classificacao_sentimento": [
+    {"input": "Adorei o produto, super recomendo!", "output": "POSITIVO"},
+    {"input": "Péssimo, quebrou no primeiro uso.", "output": "NEGATIVO"},
+    {"input": "Bom preço, mas a qualidade deixa a desejar.", "output": "MISTO"}
+  ],
+  "extracao_dados": [
+    {
+      "input": "Comprei um Notebook Dell por R$3500 e veio com pixels mortos.",
+      "output": "{\"produto\": \"Notebook Dell\", \"preco\": \"R$3500\", \"defeito\": \"pixels mortos\"}"
+    },
+    {
+      "input": "A Smart TV LG não liga mais.",
+      "output": "{\"produto\": \"Smart TV LG\", \"preco\": null, \"defeito\": \"não liga\"}"
+    }
+  ],
+  "geracao_resposta": [
+    {
+      "input": "Meu pedido está atrasado há 5 dias!",
+      "output": "Olá! Lamentamos muito pelo atraso. Vamos priorizar seu pedido e enviar o código de rastreio atualizado em até 24h. Pode nos confirmar o número do pedido?"
+    },
+    {
+      "input": "O produto chegou diferente do que aparece no site.",
+      "output": "Olá! Sentimos muito pelo ocorrido. Você pode iniciar a troca gratuita pelo nosso portal em até 7 dias. Envie uma foto do item recebido e abrimos o chamado por aqui."
+    }
+  ]
+}

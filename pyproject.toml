@@ -1,0 +1,23 @@
+[project]
+name = "pai-cp02-stig4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Merlottera", email = "sasaquerie@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "ollama>=0.6.2",
+    "pandas>=3.0.3",
+    "python-dotenv>=1.2.2",
+    "tiktoken>=0.13.0",
+]
+
+[project.scripts]
+pai-cp02-stig4 = "pai_cp02_stig4:main"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"

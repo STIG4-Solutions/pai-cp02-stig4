@@ -1,0 +1,92 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Comprei esse fone e a qualidade do som é excelente! Bateria dura o dia inteiro, super recomendo a todos.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Produto chegou com a tela trincada, embalagem toda amassada. Pedi reembolso e até agora nada. Decepcionante.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "O tênis é bonito e confortável, mas o preço cobrado tá muito acima do que vale. Esperava mais pelo valor.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Recebi o produto no prazo informado. Está dentro do esperado, sem grandes surpresas.",
+      "esperado": "NEUTRO"
+    },
+    {
+      "input": "Cafeteira maravilhosa! Faz um café delicioso, fácil de limpar e o design é lindo. Melhor compra do ano.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Veio errado, pedi tamanho M e mandaram GG. A loja não respondeu meus emails. Horrível.",
+      "esperado": "NEGATIVO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Comprei um Notebook Dell Inspiron 15 por R$3.500 e a tela já chegou com pixels mortos no canto superior.",
+      "esperado": {
+        "produto": "Notebook Dell Inspiron 15",
+        "preco": "R$3.500",
+        "defeito": "pixels mortos"
+      }
+    },
+    {
+      "input": "A Smart TV Samsung de 50 polegadas que comprei na semana passada simplesmente não liga mais.",
+      "esperado": {
+        "produto": "Smart TV Samsung",
+        "preco": null,
+        "defeito": "não liga"
+      }
+    },
+    {
+      "input": "Paguei R$899 num Fone JBL Tune 760 e o lado direito não funciona desde o primeiro uso.",
+      "esperado": {
+        "produto": "Fone JBL Tune 760",
+        "preco": "R$899",
+        "defeito": "lado direito não funciona"
+      }
+    },
+    {
+      "input": "A Cadeira Gamer ThunderX3 que eu comprei está com o pistão vazando óleo já no segundo mês de uso.",
+      "esperado": {
+        "produto": "Cadeira Gamer ThunderX3",
+        "preco": null,
+        "defeito": "pistão vazando óleo"
+      }
+    },
+    {
+      "input": "Comprei um Liquidificador Philco por R$199 e o motor faz um barulho estranho desde o primeiro dia.",
+      "esperado": {
+        "produto": "Liquidificador Philco",
+        "preco": "R$199",
+        "defeito": "barulho estranho no motor"
+      }
+    }
+  ],
+  "geracao_resposta": [
+    {
+      "input": "Meu pedido está atrasado há 5 dias e ninguém me responde no chat!",
+      "esperado": ["pedido", "atraso", "rastreio", "desculp"]
+    },
+    {
+      "input": "Recebi o produto mas veio sem o manual e sem o cabo de força. Está incompleto.",
+      "esperado": ["lament", "envio", "manual", "cabo"]
+    },
+    {
+      "input": "Quero cancelar minha compra, ainda não saiu pra entrega. É possível?",
+      "esperado": ["cancela", "pedido", "reembolso"]
+    },
+    {
+      "input": "O produto chegou diferente da foto do site. Quero trocar.",
+      "esperado": ["troca", "lament", "portal", "7 dias"]
+    },
+    {
+      "input": "Já é a segunda vez que esse mesmo produto chega com defeito. Estou muito insatisfeito.",
+      "esperado": ["lament", "trocar", "qualidade", "soluç"]
+    }
+  ]
+}

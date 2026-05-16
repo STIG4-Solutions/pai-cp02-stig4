@@ -1,0 +1,14 @@
+{
+  "classificacao_sentimento": {
+    "instrucao_base": "Classifique o sentimento da review em POSITIVO, NEGATIVO, NEUTRO ou MISTO.",
+    "formato": "Responda APENAS com a categoria, em uma única palavra."
+  },
+  "extracao_dados": {
+    "instrucao_base": "Extraia produto, preço e defeito da reclamação do cliente.",
+    "formato": "Responda APENAS com JSON válido nas chaves: produto, preco, defeito."
+  },
+  "geracao_resposta": {
+    "instrucao_base": "Escreva uma resposta cordial e resolutiva à mensagem do cliente.",
+    "formato": "Texto de 2 a 4 frases com tom educado e próximo passo concreto."
+  }
+}
